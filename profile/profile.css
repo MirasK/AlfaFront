@@ -1,0 +1,51 @@
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #000;
+  background: url(bg2.png);
+  background-size: cover;
+}
+h2 {
+	padding-left: 20px; 
+}
+b {
+	color: black;
+}
+.profile-card {
+	width: 400px;
+	margin: 10px;
+	background-color: #fff;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.image-container {
+	position: relative;
+}
+.info {
+	color: red;
+	margin-right: 16px;
+}
+.main-container {
+	padding: 20px;
+}
+.skill-bar {
+	background-color: #ff794d;
+	border-radius: 16px;
+}
+.progress-bar {
+	padding: 0.1em 16px;
+	border-radius: 16px;
+	text-align: center;
+	color: #fff;
+	background-color: #ee2b2b;
+}
+input[type=button] {
+	border: none;
+	width: 90px;
+	background: red;
+	color: #000;
+	font-size: 16px;
+	line-height: 15px;
+	padding: 10px 0;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-left: 50px;
+}
