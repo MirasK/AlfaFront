@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="landing.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="profile">
+            <i class="fas fa-user userava"></i>
+            <div class="buttons">
+                <button id="setandout">Settings</button>
+                <button id="setandout">Log Out</button>
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tabs-header">
+                <div class="tabs-title">
+                    Dashboard
+                </div>
+                <div class="tabs-tabs">
+                        <ul class="tabs-buttons">
+                            <li class="active">
+                                <a href="">Map</a>
+                            </li>
+                            <li>
+                                <a href="">Upgrade</a>
+                            </li>
+                            <li>
+                                <a href="">Rating</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="tabs-content">
+                        <div class="tabs-panel active" data-index="0"> 
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    70%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-panel" data-index="1"> 
+                            <div class="progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-panel" data-index="2"> 
+                                <div class="progress">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            70%
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const tabLinks = document.querySelectorAll(".tabs-buttons a");
+            const tabPanels = document.querySelectorAll(".tabs-panel");
+
+            for (let el of tabLinks) {
+            el.addEventListener("click", e => {
+                e.preventDefault();
+
+                document.querySelector(".tabs-buttons li.active").classList.remove("active");
+                document.querySelector(".tabs-panel.active").classList.remove("active");
+
+                const parentListItem = el.parentElement;
+                parentListItem.classList.add("active");
+                const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+
+                const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
+                panel[0].classList.add("active");
+                });
+            }
+        </script>
+    </body>
+</html>
