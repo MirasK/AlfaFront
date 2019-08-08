@@ -1,0 +1,13 @@
+.table{
+	text-align:center;
+}
+.table-title{
+	font-size:2em;
+}
+.progress{
+	margin-top: 3%;
+	height:50px;
+}
+html{
+	padding:30px;
+}

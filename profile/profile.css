@@ -50,6 +50,9 @@ input[type=button] {
 	cursor: pointer;
 	margin-left: 50px;
 }
+input[class=bio] {
+	margin-left: 130px;
+}
 .improve-button {
 	margin-left: 80px; 
 }
