@@ -1,0 +1,142 @@
+* {
+	font-family: sans-serif;
+	list-style: none;
+	padding: 0;
+}
+body {
+	background: #333;
+}
+.levels {
+	width: 500px;
+	margin: 60px auto;
+	color: white
+}
+.levels li {
+	margin: 20px 0;
+}
+.bar {
+	background: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #ff3300;
+}
+.bar span {
+	height: 2px;
+	float: left;
+	background: #ff3300;
+}
+.lwhite {
+	width: 0%;
+	animation: lwhite 2s;
+}
+.lgreen {
+	width: 60%;
+	animation: lgreen 2s;
+}
+.lred {
+	width: 100%;
+	animation: lred 2s;
+}
+@keyframes lgreen {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 60%
+	}
+}
+@keyframes lred {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%
+	}
+}
+li {
+	margin-bottom: auto;
+}
+.box2 {
+    margin-left: 5px;
+
+}
+
+input[type=checkbox] {
+    position: relative;
+    height: 18px;
+    width: 36px;
+    background: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    -webkit-appearance: none;
+    transition: .5s;
+}
+input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    transform: scale(.85);
+    background: linear-gradient(#fff, #f2f2f2, #e6e6e6, #d9d9d9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+
+}
+input:checked[type=checkbox] {
+    background: red;
+}
+input:checked[type="checkbox"]:before{
+    left: 18px;
+}
+input[type=button] {
+    border: none;
+    width: 90px;
+    background: red;
+    color: #000;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.button-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-primary {
+    background-color: red;
+}
+
+.btn-primary:hover {
+    background-color: #563d7c;
+}
+.btn {
+    font-size: 95%;
+    padding: 8px 14px;
+    margin-left: 350px;
+    margin-bottom: 0px;
+    border-radius: 15px;
+}
+/*.table{
+	text-align:center;
+}
+.table-title{
+	font-size:2em;
+}
+.progress{
+	margin-top: 3%;
+	height:50px;
+}
+html{
+	padding:30px;
+}*/
