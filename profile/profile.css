@@ -12,7 +12,8 @@ b {
 }
 .profile-card {
 	width: 400px;
-	margin: 10px;
+	margin: auto;
+	/*margin: 10px;*/
 	background-color: #fff;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
@@ -48,4 +49,25 @@ input[type=button] {
 	border-radius: 15px;
 	cursor: pointer;
 	margin-left: 50px;
+}
+.improve-button {
+	margin-left: 80px; 
+}
+.button-container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.btn-primary {
+	background-color: red;
+}
+
+.btn-primary:hover {
+	background-color: #563d7c;
+}
+.btn {
+	font-size: 95%;
+	padding: 8px 14px;
+	margin-left: 70px;
+	border-radius: 15px;
 }
