@@ -19,6 +19,10 @@ h1 {
 	letter-spacing: 2px;
 	text-align: center;
 }
+p {
+	font-size: 15px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
 .search-field {
 	height: 30px;
 	padding: 10px;
